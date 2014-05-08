@@ -394,7 +394,10 @@ var CrosswordUtils = {
                 if(show_answers) {
                     html.push(char);
                 } else {
-                    html.push("&nbsp;");								
+                    if (css_class != 'no-border')
+	                    html.push("<input type='text' style='width: 12px; height: 12px; border: 0;'/>");
+	            	else
+	            		html.push("&nbsp;");								
                 }
             }
             html.push("</tr>");
