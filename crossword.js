@@ -395,7 +395,7 @@ var CrosswordUtils = {
                     html.push(char);
                 } else {
                     if (css_class != 'no-border')
-	                    html.push("<input type='text' style='width: 12px; height: 12px; border: 0;'/>");
+	                    html.push("<input name='char_" + r + "x" + c + "'type='text' style='width: 12px; height: 12px; border: 0;'/>");
 	            	else
 	            		html.push("&nbsp;");								
                 }
